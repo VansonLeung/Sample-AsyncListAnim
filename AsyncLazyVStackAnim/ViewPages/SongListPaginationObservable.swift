@@ -75,7 +75,7 @@ struct SongListPaginationObservable: View {
         if !shouldFetch { return }
         
         if let query = query,
-           query != "" {
+           query.trimmingCharacters(in: .whitespacesAndNewlines) != "" {
             dataObs.clearSongData()
         }
         

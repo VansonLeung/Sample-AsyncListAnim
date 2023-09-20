@@ -15,7 +15,7 @@ class KCItunesSongListObservable: ObservableObject {
     var query: String?
     
     func clearSongData() {
-        items.removeAll()
+        self.items.removeAll()
     }
     
     func loadSongData(

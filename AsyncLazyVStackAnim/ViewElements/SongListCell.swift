@@ -9,27 +9,29 @@ import SwiftUI
 
 
 struct SongListCell: View {
+    
     var it: GenericListItemViewModel
+    
     @State var isStarted = false
+    
     var body: some View {
         VStack {
-            if isStarted {
+            VStack {
                 Text("\(it.title ?? "")")
                     .font(.body)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .transition(.scale(scale: 0))
-                Text("\(it.subtitle ?? "")")
+                Text("\(it.subtitle ?? "") \(isStarted ?"T":"F")")
                     .font(.footnote)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .transition(.scale(scale: 0))
             }
+            .opacity(isStarted ? 1 : 0)
+            .scaleEffect(CGSize(width: isStarted ? 1 : 0, height: isStarted ? 1 : 0))
         }
+        .animation(.default, value: isStarted)
         .fixedSize(horizontal: false, vertical: true)
         .onAppear {
-            Task.detached {
-                withAnimation {
-                    isStarted = true
-                }
+            withAnimation {
+                isStarted = true
             }
         }
     }

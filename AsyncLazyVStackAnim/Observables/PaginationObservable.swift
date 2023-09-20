@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 class KCUIPaginationObservable: ObservableObject {
     
     /// current page of the list data fetch

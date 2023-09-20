@@ -173,6 +173,7 @@ actor KCUIPaginationActor {
 }
 
 
+@MainActor
 struct KCUIPaginationReader<Content: View>: View {
     private var content: (
         _ actor: KCUIPaginationActor,
