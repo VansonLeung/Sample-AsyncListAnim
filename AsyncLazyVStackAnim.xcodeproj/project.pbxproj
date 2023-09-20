@@ -11,6 +11,15 @@
 		21EC1AE62ABA95E700DA3CDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC1AE52ABA95E700DA3CDC /* ContentView.swift */; };
 		21EC1AE82ABA95E800DA3CDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21EC1AE72ABA95E800DA3CDC /* Assets.xcassets */; };
 		21EC1AEB2ABA95E800DA3CDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21EC1AEA2ABA95E800DA3CDC /* Preview Assets.xcassets */; };
+		21EC1AF32ABA991A00DA3CDC /* KeysocItunesSearchAPIServiceiOS-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 21EC1AF22ABA991A00DA3CDC /* KeysocItunesSearchAPIServiceiOS-Swift */; };
+		21EC1AF52ABA9A3200DA3CDC /* PaginationObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC1AF42ABA9A3200DA3CDC /* PaginationObservable.swift */; };
+		21EC1AF72ABABA0100DA3CDC /* PaginationActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC1AF62ABABA0100DA3CDC /* PaginationActor.swift */; };
+		21EC1AF92ABAD19F00DA3CDC /* SongListPaginationActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC1AF82ABAD19F00DA3CDC /* SongListPaginationActor.swift */; };
+		21EC1AFB2ABAD1A900DA3CDC /* SongListPaginationObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC1AFA2ABAD1A900DA3CDC /* SongListPaginationObservable.swift */; };
+		21EC1B012ABAD20A00DA3CDC /* GenericListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC1B002ABAD20A00DA3CDC /* GenericListItemViewModel.swift */; };
+		21EC1B032ABAD23800DA3CDC /* KCItunesSongListObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC1B022ABAD23800DA3CDC /* KCItunesSongListObservable.swift */; };
+		21EC1B062ABAD35700DA3CDC /* AppRootNavigationBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC1B052ABAD35700DA3CDC /* AppRootNavigationBundle.swift */; };
+		21EC1B092ABAD58700DA3CDC /* SongListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC1B082ABAD58700DA3CDC /* SongListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,14 @@
 		21EC1AE52ABA95E700DA3CDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		21EC1AE72ABA95E800DA3CDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21EC1AEA2ABA95E800DA3CDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		21EC1AF42ABA9A3200DA3CDC /* PaginationObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationObservable.swift; sourceTree = "<group>"; };
+		21EC1AF62ABABA0100DA3CDC /* PaginationActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationActor.swift; sourceTree = "<group>"; };
+		21EC1AF82ABAD19F00DA3CDC /* SongListPaginationActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListPaginationActor.swift; sourceTree = "<group>"; };
+		21EC1AFA2ABAD1A900DA3CDC /* SongListPaginationObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListPaginationObservable.swift; sourceTree = "<group>"; };
+		21EC1B002ABAD20A00DA3CDC /* GenericListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericListItemViewModel.swift; sourceTree = "<group>"; };
+		21EC1B022ABAD23800DA3CDC /* KCItunesSongListObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCItunesSongListObservable.swift; sourceTree = "<group>"; };
+		21EC1B052ABAD35700DA3CDC /* AppRootNavigationBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootNavigationBundle.swift; sourceTree = "<group>"; };
+		21EC1B082ABAD58700DA3CDC /* SongListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21EC1AF32ABA991A00DA3CDC /* KeysocItunesSearchAPIServiceiOS-Swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +69,13 @@
 		21EC1AE22ABA95E700DA3CDC /* AsyncLazyVStackAnim */ = {
 			isa = PBXGroup;
 			children = (
+				21EC1B042ABAD34800DA3CDC /* Packages */,
+				21EC1AFF2ABAD1EC00DA3CDC /* ViewModels */,
+				21EC1AFE2ABAD1E300DA3CDC /* Observables */,
+				21EC1AFD2ABAD1DC00DA3CDC /* Actors */,
+				21EC1B072ABAD56900DA3CDC /* ViewElements */,
+				21EC1AFC2ABAD1D400DA3CDC /* ViewPages */,
 				21EC1AE32ABA95E700DA3CDC /* AsyncLazyVStackAnimApp.swift */,
-				21EC1AE52ABA95E700DA3CDC /* ContentView.swift */,
 				21EC1AE72ABA95E800DA3CDC /* Assets.xcassets */,
 				21EC1AE92ABA95E800DA3CDC /* Preview Content */,
 			);
@@ -65,6 +88,57 @@
 				21EC1AEA2ABA95E800DA3CDC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		21EC1AFC2ABAD1D400DA3CDC /* ViewPages */ = {
+			isa = PBXGroup;
+			children = (
+				21EC1AE52ABA95E700DA3CDC /* ContentView.swift */,
+				21EC1AFA2ABAD1A900DA3CDC /* SongListPaginationObservable.swift */,
+				21EC1AF82ABAD19F00DA3CDC /* SongListPaginationActor.swift */,
+			);
+			path = ViewPages;
+			sourceTree = "<group>";
+		};
+		21EC1AFD2ABAD1DC00DA3CDC /* Actors */ = {
+			isa = PBXGroup;
+			children = (
+				21EC1AF62ABABA0100DA3CDC /* PaginationActor.swift */,
+			);
+			path = Actors;
+			sourceTree = "<group>";
+		};
+		21EC1AFE2ABAD1E300DA3CDC /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				21EC1B022ABAD23800DA3CDC /* KCItunesSongListObservable.swift */,
+				21EC1AF42ABA9A3200DA3CDC /* PaginationObservable.swift */,
+			);
+			path = Observables;
+			sourceTree = "<group>";
+		};
+		21EC1AFF2ABAD1EC00DA3CDC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				21EC1B002ABAD20A00DA3CDC /* GenericListItemViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		21EC1B042ABAD34800DA3CDC /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				21EC1B052ABAD35700DA3CDC /* AppRootNavigationBundle.swift */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		21EC1B072ABAD56900DA3CDC /* ViewElements */ = {
+			isa = PBXGroup;
+			children = (
+				21EC1B082ABAD58700DA3CDC /* SongListCell.swift */,
+			);
+			path = ViewElements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +157,9 @@
 			dependencies = (
 			);
 			name = AsyncLazyVStackAnim;
+			packageProductDependencies = (
+				21EC1AF22ABA991A00DA3CDC /* KeysocItunesSearchAPIServiceiOS-Swift */,
+			);
 			productName = AsyncLazyVStackAnim;
 			productReference = 21EC1AE02ABA95E700DA3CDC /* AsyncLazyVStackAnim.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +188,9 @@
 				Base,
 			);
 			mainGroup = 21EC1AD72ABA95E700DA3CDC;
+			packageReferences = (
+				21EC1AF12ABA991A00DA3CDC /* XCRemoteSwiftPackageReference "KeysocItunesSearchAPIServiceiOS-Swift" */,
+			);
 			productRefGroup = 21EC1AE12ABA95E700DA3CDC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +218,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				21EC1AE62ABA95E700DA3CDC /* ContentView.swift in Sources */,
+				21EC1B062ABAD35700DA3CDC /* AppRootNavigationBundle.swift in Sources */,
+				21EC1B032ABAD23800DA3CDC /* KCItunesSongListObservable.swift in Sources */,
 				21EC1AE42ABA95E700DA3CDC /* AsyncLazyVStackAnimApp.swift in Sources */,
+				21EC1AF52ABA9A3200DA3CDC /* PaginationObservable.swift in Sources */,
+				21EC1B012ABAD20A00DA3CDC /* GenericListItemViewModel.swift in Sources */,
+				21EC1AF72ABABA0100DA3CDC /* PaginationActor.swift in Sources */,
+				21EC1AF92ABAD19F00DA3CDC /* SongListPaginationActor.swift in Sources */,
+				21EC1B092ABAD58700DA3CDC /* SongListCell.swift in Sources */,
+				21EC1AFB2ABAD1A900DA3CDC /* SongListPaginationObservable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +363,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +393,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +429,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		21EC1AF12ABA991A00DA3CDC /* XCRemoteSwiftPackageReference "KeysocItunesSearchAPIServiceiOS-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/VansonLeung/KeysocItunesSearchAPIServiceiOS-Swift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		21EC1AF22ABA991A00DA3CDC /* KeysocItunesSearchAPIServiceiOS-Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21EC1AF12ABA991A00DA3CDC /* XCRemoteSwiftPackageReference "KeysocItunesSearchAPIServiceiOS-Swift" */;
+			productName = "KeysocItunesSearchAPIServiceiOS-Swift";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 21EC1AD82ABA95E700DA3CDC /* Project object */;
 }
