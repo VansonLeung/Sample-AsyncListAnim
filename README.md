@@ -21,6 +21,8 @@ https://github.com/VansonLeung/SwiftUI-Sample-AsyncListAnim/assets/1129695/7090e
 
 ```swift
 
+        // Usage sample of `KeysocItunesSearchAPIServiceiOS-Swift` library
+
         do {
             let query = self.query ?? ""
             let itemsPerPage = 100
