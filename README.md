@@ -16,6 +16,9 @@ https://github.com/VansonLeung/SwiftUI-Sample-AsyncListAnim/assets/1129695/7090e
 
 ## Concurrency - Async / await usages
 
+- Using too many closures may cause completion hell / callback hell.
+- Using async / await usually makes code more readable.
+
 ```swift
 
         do {
@@ -145,6 +148,10 @@ class KCITunesAPINetworkService {
 
 ## Concurrency - Continuation usages
 
+- Continuation in Swift is primarily used for bridging between asynchronous and synchronous code.
+- It allows you to wrap asynchronous or callback-based code that doesn't use the async and await syntax into a form that can be used with async and await code.
+- This is often necessary when interfacing with libraries or APIs that don't yet support Swift's native concurrency features.
+
 ```swift
     /// Prepare the pagination view model to load the next request (next page or refresh)
     ///
@@ -191,6 +198,8 @@ class KCITunesAPINetworkService {
 
 
 ## Concurrency - AsyncStream usages
+
+- By using AsyncStream - a for-loop / any iterable of Async tasks can be run sequentially.
 
 ```swift
 
