@@ -84,6 +84,8 @@ class KCITunesAPINetworkService {
 
     private init() {}
 
+
+    /// 1. using closures may cause completion hell / callback hell
     func performRequest<T: Codable>(
         _ request: URLRequest,
         decodingType: T.Type,
@@ -112,6 +114,7 @@ class KCITunesAPINetworkService {
     }
     
     
+    /// 2. using async / await usually makes code more readable
     @available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
     func performRequestAsync<T: Codable>(
         _ request: URLRequest,
